@@ -1,0 +1,22 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css"> </head>
+</head>
+<body>
+    <div id="chv2_staticmap" style="">
+        <div id="pointer"></div>
+        <div id="pointer2"></div>
+    </div>
+    <script>
+        var htmlToInject = '';
+
+        var gridAlphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
+        for (var mapX = 0; mapX < 6; mapX++) {
+            for (var mapY = 1; mapY < 7; mapY++) {
+                htmlToInject += '<div class="grid">' + gridAlphabet[mapX] + mapY + ' </div>';
+            }
+        }
+        $('#chv2_staticmap').prepend(htmlToInject);
+    </script>
+</body>
+</html>

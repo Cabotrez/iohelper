@@ -1,0 +1,34 @@
+{
+    "manifest_version": 2,
+
+    "name": "IO Helper",
+    "description": "This extensions use IO Helper!",
+    "version": "2.1",
+
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+
+    "content_scripts": [{
+        "matches": ["http://agar.red/*", "http://agar.bio/*", "http://play.agario0.com/*", "http://gaver.io/*", "http://cellcraft.io/*", "http://www.agario.info/*", "http://agario.info/*", "http://agar.pro/play*", "http://qwoks.ga/*", "http://cowpits.ga/*", "http://bomb.agar.bio/*", "http://agarix.ru/*", "http://germs.io/*"],
+        "js": ["js/jquery-3.1.1.min.js", "js/core.js", "js/socket.io.min.js"],
+        "css": ["css/style.css", "sweetalert.css"],
+        "run_at": "document_start"
+    }],
+
+    "permissions": ["tabs", "http://agar.red/*", "http://agar.bio/*", "http://play.agario0.com/*", "http://gaver.io/*", "http://cellcraft.io/*", "http://www.agario.info/*", "http://agario.info/*", "http://agar.pro/play*", "http://qwoks.ga/*", "http://cowpits.ga/*", "http://bomb.agar.bio/*", "http://agarix.ru/*", "http://germs.io/*"],
+
+    "web_accessible_resources": ["menu.html", "minimap.html", "img/background.jpg", "img/outerBar.png", "img/paypal.png", "img/sub.png", "js/iohelper.js", "js/jquery-3.1.1.min.js", "js/socket.io.min.js", "sweetalert.css"],
+
+    "background": {
+        "scripts": ["js/background.js"]
+    }
+
+}

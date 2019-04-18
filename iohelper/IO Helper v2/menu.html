@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css"> </head>
+
+<body>
+	<div id="loading" style="z-index: 999999999999;">
+		<div id="loading-center">
+			<div id="loading-center-absolute">
+				<div class="object-1" id="object_four"></div>
+				<div class="object-2" id="object_three"></div>
+				<div class="object-3" id="object_two"></div>
+				<div class="object-4" id="object_one"></div>
+				<h4 id="load_status" style="text-align: center; margin-top: 200px; color:white">Loading components...</h4>
+				<div class="minions-bar-back" id="progress_loading">
+					<div id="minions-bar-bots" id="progress-bar" style="width:0%"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page_IO" style="display: none">
+		<div class="content">
+			<div class="col-md-3" style="color: black;margin-left: 1%;width: 24%; display:none">
+				<div class="box box-widget widget-user">
+					<div class="widget-user-header" style="background-color: #555299!important;color: white;">
+						<h3 class="widget-user-username" style="text-align: center">Your package</h3>
+					</div>
+					<div class="widget-user-image"> <img class="img-circle" style="background-color: #4CAF50;" src="http://agma.io/skins/16_lo.png" alt="User Avatar"> </div>
+					<div class="box-footer">
+						<div class="row">
+							<div class="col-sm-6 border-right" style="width: 33.33333333%;">
+								<div class="description-block">
+									<h5 id="descbots" class="description-header">0 bots</h5>
+								</div>
+							</div>
+							<div class="col-sm-6 border-right" style="width: 33.33333333%;">
+								<div class="description-block">
+									<h5 id="desctime" class="description-header">0:0:0:0</h5>
+								</div>
+							</div>
+							<div class="col-sm-6" style="width: 33.33333333%;">
+								<div class="description-block">
+									<h5 id="desccoins" class="description-header">0 coins</h5>
+								</div>
+							</div>
+						</div>
+						<div style="text-align:center; height: 40px;" class="row">
+							<div class="col-sm">
+								<a style="color:white;">
+									<li class="button points-now">
+										<i class="fa"></i> Alreay package
+									</li>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="col-md-3" style="color: black;margin-left: 1%;width: 24%;display:none">
+				<div class="box box-widget widget-user">
+					<div class="widget-user-header" style="background-color: #77532c;color: white;">
+						<h3 class="widget-user-username" style="text-align: center">Free</h3>
+					</div>
+					<div class="widget-user-image"> <img class="img-circle" style="background-color: #4CAF50;" src="http://agma.io/skins/26_lo.png" alt="User Avatar"> </div>
+					<div class="box-footer">
+						<div class="row">
+							<div class="col-sm-6 border-right" style="width: 33.33333333%;">
+								<div class="description-block">
+									<h5  class="description-header">15 bots</h5>
+								</div>
+							</div>
+							<div class="col-sm-6 border-right" style="width: 33.33333333%;">
+								<div class="description-block">
+									<h5  class="description-header">0:1:0:0</h5>
+								</div>
+							</div>
+							<div class="col-sm-6" style="width: 33.33333333%;">
+								<div class="description-block">
+									<h5 class="description-header">0 coins</h5>
+								</div>
+							</div>
+						</div>
+						<div style="text-align:center; height: 40px;" class="row">
+							<div class="col-sm">
+								<a style="color:white;">
+									<li class="button points-now" onclick="window.buyfree()">
+										<i class="fa"></i> Buy for free
+									</li>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3" style="color: black;margin-left: 1%;width: 24%;display:none">
+				<div class="box box-widget widget-user">
+					<div class="widget-user-header" style="background-color: #000000;color: white;">
+						<h3 class="widget-user-username" style="text-align: center">Premium</h3>
+					</div>
+					<div class="widget-user-image"> <img class="img-circle" style="background-color: #4CAF50;" src="http://agma.io/skins/91_lo.png?u=1509213499" alt="User Avatar"> </div>
+					<div class="box-footer">
+						<div class="row">
+							<div class="col-sm-6 border-right" style="width: 33.33333333%;">
+								<div class="description-block">
+									<h5  class="description-header">100 bots</h5>
+								</div>
+							</div>
+							<div class="col-sm-6 border-right" style="width: 33.33333333%;">
+								<div class="description-block">
+									<h5  class="description-header">0:6:0:0</h5>
+								</div>
+							</div>
+							<div class="col-sm-6" style="width: 33.33333333%;">
+								<div class="description-block">
+									<h5 class="description-header">300 coins</h5>
+								</div>
+							</div>
+						</div>
+						<div style="text-align:center; height: 40px;" class="row">
+							<div class="col-sm">
+								<a style="color:white;">
+									<li class="button points-now" onclick="window.buypremium()">
+										<i class="fa"></i> Buy for coins
+									</li>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3" style="color: black;margin-left: 1%;width: 24%;display:none">
+			<div class="box box-widget widget-user">
+				<div class="widget-user-header" style="background-color: #db8b0b!important;color: white;">
+					<h3 class="widget-user-username" style="text-align: center">Gold</h3>
+				</div>
+				<div class="widget-user-image"> <img class="img-circle" style="background-color: #4CAF50;" src="http://agma.io/skins/105_lo.png?u=1509213499" alt="User Avatar"> </div>
+				<div class="box-footer">
+					<div class="row">
+						<div class="col-sm-6 border-right" style="width: 33.33333333%;">
+							<div class="description-block">
+								<h5  class="description-header">75 bots</h5>
+							</div>
+						</div>
+						<div class="col-sm-6 border-right" style="width: 33.33333333%;">
+							<div class="description-block">
+								<h5  class="description-header">0:6:0:0</h5>
+							</div>
+						</div>
+						<div class="col-sm-6" style="width: 33.33333333%;">
+							<div class="description-block">
+								<h5 class="description-header">200 coins</h5>
+							</div>
+						</div>
+					</div>
+					<div style="text-align:center; height: 40px;" class="row">
+						<div class="col-sm">
+							<a style="color:white;">
+								<li class="button points-now" onclick="window.buygold()">
+									<i class="fa"></i> Buy for coins
+								</li>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3" style="color: black;margin-left: 1%;width: 24%;display:none">
+				<div class="box box-widget widget-user">
+					<div class="widget-user-header" style="background-color: #F44336;color: white;">
+						<h3 class="widget-user-username" style="text-align: center">Medium</h3>
+					</div>
+					<div class="widget-user-image"> <img class="img-circle" style="background-color: #4CAF50;" src="http://agma.io/skins/29_lo.png" alt="User Avatar"> </div>
+					<div class="box-footer">
+						<div class="row">
+							<div class="col-sm-6 border-right" style="width: 33.33333333%;">
+								<div class="description-block">
+									<h5  class="description-header">50 bots</h5>
+								</div>
+							</div>
+							<div class="col-sm-6 border-right" style="width: 33.33333333%;">
+								<div class="description-block">
+									<h5  class="description-header">0:6:0:0</h5>
+								</div>
+							</div>
+							<div class="col-sm-6" style="width: 33.33333333%;">
+								<div class="description-block">
+									<h5 class="description-header">100 coins</h5>
+								</div>
+							</div>
+						</div>
+						<div style="text-align:center; height: 40px;" class="row">
+							<div class="col-sm">
+								<a style="color:white;">
+									<li class="button points-now" onclick="window.buymedium()">
+										<i class="fa"></i> Buy for coins
+									</li>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form">
+			<form method="post" class="register-form" style="display: none;">
+				<h1 class="logo">Register</h1>
+				<input id="reg_login" type="text" name="username" placeholder="Username">
+				<input id="reg_pass" type="password" name="password_1" placeholder="Password">
+				<input id="reg_pass2" type="password" name="password_2" placeholder="Confirm password">
+				<input id="email" type="text" name="email" placeholder="Email">
+				<button id="sendregister" placeholder="sendregister" name="register">Register</button>
+				<p class="msg">Already have an account? <a>Login</a></p>
+			</form>
+			<form method="post" class="login-form" style="display: block;">
+				<h1 class="logo">Login</h1>
+				<input id="login_io" type="text" name="username" placeholder="Username">
+				<input id="password_io" type="password" name="password" placeholder="Password">
+				<button id="sendlogin" placeholder="sendlogin" name="login">Login</button>
+				<p class="msg">Don't have an account? <a>Register</a></p>
+			</form>
+		</div>
+	</div>
+	<div class="outBar"> <i class="fa fa-angle-double-left"> </i> </div>
+	<div class="menu_IO"> <img src="https://i.imgur.com/2WTwTz4.png" class="imgage">
+		<div class="titleText">IO Helper</div>
+		<div class="option_io">
+			<div class="optionText" style="border-top: 2px solid rgba(0,0,0,.5);">Hotkeys</div>
+			<div class="optionBox">
+				<ul>
+					<li>[X] Split your bots: <span id="split" class="disabled">Disable</span></li>
+					<li>[C] Eject from bots: <span id="eject" class="disabled">Disable</span></li>
+					<li>[Z] Bots mode: <span id="mode" class="enabled">Default</span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="option_io">
+			<div class="optionText">Bots Options</div>
+			<div class="optionBox">
+				<div id="startbots" class="optionsCB"> Start Bots </div>
+			</div>
+		</div>
+		<div class="option_io">
+			<div class="optionText">Extra</div>
+			<div class="optionBox open">
+				<div class="extraText LH">Donate</div>
+				<a href="https://www.paypal.me/opclient" target="_blank">
+					<div class="paypal"> </div>
+				</a>
+				<p class="extraPara"> Please Donate and Subscribe! </p>
+				<div class="extraText">Subscribe</div>
+				<a href="https://www.youtube.com/channel/UCF_2JK4WlPccaPEn9g98XBA?view_as=subscriber" target="_blank">
+					<div class="sub"> </div>
+				</a>
+			</div>
+		</div>
+		<div class="option_io">
+			<div class="optionText" id="curServer">Games</div>
+			<div class="optionBox" id="serversBox">
+				<input type="text" placeholder="Search Game" class="customServer"> </div>
+		</div>
+		<div id="loging_io" class="option_io">
+			<div id="logintext" class="optionText">Login/Register</div>
+		</div> <small class="CR">Copyright &copy; SizRex</small> </div>
+		<div id="infobots_io" class="bots_menu_IO" style="display: none">
+			<div id="iobots-bar"></div>
+				<div class="minions-content">
+					<div class="minions-row" id="botscounter">0/0</div>
+					<div id="minions-alive" class="minions-row">Minions Online</div>
+				</div>
+				<div class="minions-bar-back" id="progress_bar_io">
+					<div id="minions-bar-bots" style="width:0%"> </div>
+				</div>
+				<div id="iotimer-bar">
+				<div class="minions-content">
+					<div class="minions-row" id="timecounter">0:0:0:0</div>
+					<div id="minions-alive" class="minions-row">Time Remaining</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

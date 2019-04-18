@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      .main {
+          width: 10em;
+          height: 3em;
+          background-color: white;
+          cursor: pointer;
+          line-height: 3em;
+          font-size: 16px;
+          text-align: center;
+          color: black;
+          transition: ease-in, ease-out, .5s;
+      }
+      .main:hover {
+          color: rgba(0,0,0,.5);
+      }
+      .border {
+         border-top: 1px solid black;
+      }
+      .reminder {
+          width: 10em;
+          height: 3em;
+          line-height: 3em;
+          color: black;
+          font-size: 15px;
+          text-align: center;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+  </head>
+  <body>
+    <div class="main" id="enable">IO Helper Enabled</div>
+    <div class="main border" id="disable">IO Helper Disabled &#x2714;</div>
+    <div class="main border" id="refresh">&#9888; Refresh Page &#9888;</div>
+  </body>
+  
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/popup.js"></script>
+</html>
+
