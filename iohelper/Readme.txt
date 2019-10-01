@@ -5,6 +5,6 @@
 
 
 
-#This bots i paid to SizRex
+#This bots are paid to SizRex
 
 
